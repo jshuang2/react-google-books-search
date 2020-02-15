@@ -4,12 +4,6 @@ import "./style.css";
 
 function Nav() {
 
-    // getStyle = (event) => {
-    //     if (event.target) {
-    //         return ("active");
-    //     }
-    // }
-
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark">
