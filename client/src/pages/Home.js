@@ -2,9 +2,14 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../components/Grid/Grid";
 import Nav from "../components/Nav/Nav";
 import Jumbotron from "../components/Jumbotron/Jumbotron";
+import {Input, SubmitBtn} from "../components/Search/Search";
 
 class Home extends Component {
 
+    // state = {
+    //     books = [],
+    //     search: ""
+    // };
 
     render() {
         return (
@@ -12,7 +17,11 @@ class Home extends Component {
                 <Nav />
                 <Container fluid>
                 <Jumbotron />
-                Welcome to the home page.
+                <form>
+                    <h5>Search for books</h5>
+                    <Input />
+                    <SubmitBtn />
+                </form>
                 </Container>
             </div>
         )

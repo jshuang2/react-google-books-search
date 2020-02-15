@@ -8,9 +8,10 @@ class Saved extends Component {
         return (
             <div>
                 <Nav />
-                <Jumbotron fluid>
-                </Jumbotron>
+                <Container fluid>
+                <Jumbotron />
                 Welcome to the saved page.
+                </Container>
             </div>
         )
     }
