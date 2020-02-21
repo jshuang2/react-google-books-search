@@ -17,14 +17,15 @@ class Home extends Component {
     // Create function to search for books through Google API
     searchBooks = () => {
         API.googleBooks(this.state.search)
-            .then(res => 
+            .then(res => {
+                console.log("This is res.data", res.data.items)
                 this.setState({
                 books: res.data.items,
                 search: ""
-            }))
+            })})
             .catch(err => console.log(err));
 
-            console.log("this is the state", this.state.books);
+            console.log("this is the state", this.state);
             
     };
 
@@ -65,7 +66,7 @@ class Home extends Component {
                     saveGoogleBook={this.saveGoogleBook}>
                     </ResultList>
                 ) : (
-                    <ResultList><h5>No results to display</h5></ResultList>
+                    <h5>No results to display</h5>
                 )}
                 
                 </Container>

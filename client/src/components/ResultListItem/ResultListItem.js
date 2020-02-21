@@ -1,13 +1,13 @@
 import React from 'react';
 
 function ResultListItem(props) {
-    console.log("These are the main props" + props);
+    
     return (
         <div>
             <div className="card">
                 <h5 className="card-header">Featured</h5>
                 <div className="card-body">
-                    <p>{props.image}</p>
+                    <img src={props.image} />
                     <h5 className="card-title">{props.title}</h5>
                     <p>{props.id}</p>
                     <p className="card-text" >{props.description}</p>
