@@ -3,6 +3,7 @@ import { Col, Row, Container } from "../components/Grid/Grid";
 import Nav from "../components/Nav/Nav";
 import Jumbotron from "../components/Jumbotron/Jumbotron";
 import API from '../utils/API';
+import SavedList from "../components/SavedList/SavedList";
 
 class Saved extends Component {
 
@@ -31,6 +32,15 @@ class Saved extends Component {
                 <Container fluid>
                 <Jumbotron />
                 Welcome to the saved page.
+                {this.state.savedBooks.length ? (
+                    <SavedList 
+                    bookState={this.state.savedBooks}
+                    // deleteGoogleBook={this.deleteGoogleBook}
+                    >
+                    </SavedList>
+                ) : (
+                    <h5>No results to display</h5>
+                )}
                 </Container>
             </div>
         )
