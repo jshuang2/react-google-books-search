@@ -24,8 +24,6 @@ class Home extends Component {
                 search: ""
             })})
             .catch(err => console.log(err));
-
-            console.log("this is the state", this.state);
             
     };
 
