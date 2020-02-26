@@ -66,7 +66,7 @@ class Home extends Component {
                         value={this.state.search}
                         onChange={this.handleInputChange}
                         name="search"
-                        placeholder="Search for a book"
+                        placeholder="e.g. Harry Potter"
                     />
                     <SubmitBtn onClick={this.handleFormSubmit}/>
                 </form>
@@ -77,7 +77,10 @@ class Home extends Component {
                     saveGoogleBook={this.saveGoogleBook}>
                     </ResultList>
                 ) : (
-                    <h5>No results to display</h5>
+                    <div>
+                        <hr/>
+                    <p style={{fontStyle: "italic"}}>No results to display</p>
+                    </div>
                 )}
                 
                 </Container>
