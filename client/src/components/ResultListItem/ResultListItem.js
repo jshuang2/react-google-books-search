@@ -7,7 +7,7 @@ function ResultListItem(props) {
     return (
         <div>
             <div className="card">
-                <h5 className="card-header">Featured</h5>
+                <div className="card-header"></div>
                 <div className="card-body">
                     <img src={image} style={{maxWidth: "100px"}}/>
                     <h5 className="card-title">{title}</h5>
