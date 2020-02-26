@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ResultListItem(props) {
-    const {title, authors, image, link, description, deleteGoogleBook} = props
+    const {title, authors, image, link, description, deleteGoogleBook, id} = props
     return (
         <div>
             <div className="card">
@@ -12,7 +12,7 @@ function ResultListItem(props) {
                     <p className="card-text" >{description}</p>
                     <p>{authors}</p>
                     <a href={link} target="_blank" className="btn btn-primary">View Book</a>
-                    {/* <button onClick={deleteGoogleBook.bind(this, props)}>Delete</button> */}
+                    <button onClick={deleteGoogleBook.bind(this, props)}>Delete</button>
                 </div>
             </div>
         </div>

@@ -12,6 +12,21 @@ class Saved extends Component {
     }
 
     componentDidMount = () => {
+        this.getBooks()
+    }
+
+    deleteGoogleBook = currentBook => {
+        API.deleteBook( currentBook.id )
+        .then(res => {
+            console.log("You deleted this book:", res);
+            this.getBooks();
+        })
+        .catch(err => {
+            console.log("This is the error", err);
+        })
+    }
+
+    getBooks = () => {
         API.getBooks()
         .then(res => {
             this.setState({
@@ -31,11 +46,10 @@ class Saved extends Component {
                 <Nav />
                 <Container fluid>
                 <Jumbotron />
-                Welcome to the saved page.
                 {this.state.savedBooks.length ? (
                     <SavedList 
                     bookState={this.state.savedBooks}
-                    // deleteGoogleBook={this.deleteGoogleBook}
+                    deleteGoogleBook={this.deleteGoogleBook}
                     >
                     </SavedList>
                 ) : (
