@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col, Row, Container } from "../components/Grid/Grid";
+import { Container } from "../components/Grid/Grid";
 import Nav from "../components/Nav/Nav";
 import Jumbotron from "../components/Jumbotron/Jumbotron";
 import API from '../utils/API';

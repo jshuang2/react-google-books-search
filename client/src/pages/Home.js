@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Row, Container } from "../components/Grid/Grid";
+import { Container } from "../components/Grid/Grid";
 import Nav from "../components/Nav/Nav";
 import Jumbotron from "../components/Jumbotron/Jumbotron";
 import {Input, SubmitBtn} from "../components/Search/Search";
@@ -42,8 +42,9 @@ class Home extends Component {
     };
 
     saveGoogleBook = currentBook => {
-        console.log("This is the current book", currentBook);
+        // console.log("This is the current book", currentBook);
         API.saveBook({
+            id: currentBook.id,
             title: currentBook.title,
             authors: currentBook.authors,
             description: currentBook.description,
