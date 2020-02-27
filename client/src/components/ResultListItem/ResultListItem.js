@@ -75,7 +75,7 @@ class ResultListItem extends Component {
                         <img src={this.props.image} style={{maxWidth: "100px"}} alt="book"/>
                         <h5 className="card-title" style={{margin: "10px 0"}}>{this.props.title}</h5>
                         <p className="card-text" >{this.props.description}</p>
-                        <p>{this.props.authors}</p>
+                        <p style={{fontStyle: "italic"}}>Author(s): {this.props.authors}</p>
                         <a href={this.props.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{marginRight: "6px"}}>View Book</a>
                         <button onClick={() => { this.props.saveGoogleBook.bind(this, this.props); this.getStyle(); }} style={{ backgroundColor: this.state.bgColor, color: this.state.color }} className="btn">{this.state.text}</button>
                     </div>
