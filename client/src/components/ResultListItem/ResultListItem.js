@@ -36,10 +36,10 @@ class ResultListItem extends Component {
 
 
 
-    // onClickFunc = () => {
-    //     this.props.saveGoogleBook.bind(this, this.props);
-    //     // this.checkSaved(this.props.id);
-    // }
+    onClickFunc = () => {
+        this.props.saveGoogleBook.bind(this, this.props);
+        this.getStyle();
+    }
 
     // getStyle = (id) => {
     //     let style = {
@@ -67,7 +67,7 @@ class ResultListItem extends Component {
     render () {
         
         return (
-            
+
             <div>
                 <div className="card">
                     <div className="card-header"></div>
@@ -77,7 +77,7 @@ class ResultListItem extends Component {
                         <p className="card-text" >{this.props.description}</p>
                         <p style={{fontStyle: "italic"}}>Author(s): {this.props.authors}</p>
                         <a href={this.props.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{marginRight: "6px"}}>View Book</a>
-                        <button onClick={() => { this.props.saveGoogleBook.bind(this, this.props); this.getStyle(); }} style={{ backgroundColor: this.state.bgColor, color: this.state.color }} className="btn">{this.state.text}</button>
+                        <button onClick={this.props.saveGoogleBook.bind(this, this.props)} style={{ backgroundColor: this.state.bgColor, color: this.state.color }} className="btn">{this.state.text}</button>
                     </div>
                 </div>
             </div>
@@ -89,31 +89,6 @@ class ResultListItem extends Component {
 export default ResultListItem;
 
 
-// () => { this.props.saveGoogleBook.bind(this, this.props); this.checkSaved(this.props.id); }
 
-/*import React from 'react';
 
-function ResultListItem(props) {
 
-    console.log("Here are all the props", props);
-
-    const {title, authors, image, link, description, saveGoogleBook} = props
-    return (
-        <div>
-            <div className="card">
-                <div className="card-header"></div>
-                <div className="card-body">
-                    <img src={image} style={{maxWidth: "100px"}}/>
-                    <h5 className="card-title" style={{margin: "10px 0"}}>{title}</h5>
-                    <p className="card-text" >{description}</p>
-                    <p>{authors}</p>
-                    <a href={link} target="_blank" className="btn btn-primary" style={{marginRight: "6px"}}>View Book</a>
-                    <button onClick={saveGoogleBook.bind(this, props)} className="btn">Save</button>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export default ResultListItem;
-*/
