@@ -37,7 +37,7 @@ class ResultListItem extends Component {
 
 
     onClickFunc = () => {
-        this.props.saveGoogleBook.bind(this, this.props);
+        this.props.saveGoogleBook(this.props)//.bind(this, this.props);
         this.getStyle();
     }
 
@@ -66,6 +66,8 @@ class ResultListItem extends Component {
     
     render () {
         
+        const {book} = this.props
+
         return (
 
             <div>
@@ -77,7 +79,7 @@ class ResultListItem extends Component {
                         <p className="card-text" >{this.props.description}</p>
                         <p style={{fontStyle: "italic"}}>Author(s): {this.props.authors}</p>
                         <a href={this.props.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{marginRight: "6px"}}>View Book</a>
-                        <button onClick={this.props.saveGoogleBook.bind(this, this.props)} style={{ backgroundColor: this.state.bgColor, color: this.state.color }} className="btn">{this.state.text}</button>
+                        <button onClick={this.onClickFunc} style={{ backgroundColor: this.state.bgColor, color: this.state.color }} className="btn">{this.state.text}</button>
                     </div>
                 </div>
             </div>

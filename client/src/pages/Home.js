@@ -42,7 +42,7 @@ class Home extends Component {
     };
 
     saveGoogleBook = currentBook => {
-        // console.log("This is the current book", currentBook);
+        console.log("This is the current book", currentBook);
         API.saveBook({
             id: currentBook.id,
             title: currentBook.title,
