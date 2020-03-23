@@ -44,7 +44,7 @@ class ResultListItem extends Component {
     // getStyle = (id) => {
     //     let style = {
     //         backgroundColor: "#00E000",
-    //         color: "white"
+    //         color: "white"   
     //     }
     //     if (this.state.mounted) {
     //         console.log("Here's the id", id)
