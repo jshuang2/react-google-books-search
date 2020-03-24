@@ -44,7 +44,7 @@ To Visit App:
 
 ## Reflection
 
-This was a week long project I built during my final month of the University of Washington's coding bootcamp. This project is a culmination of much of what was taught in the program. Project goals included creating a functional React app and tying that together with a backend database.
+This was a week long project I built during the final month of University of Washington's coding bootcamp. It was a culmination of much of what was taught in the program. Project goals included creating a functional React app and tying that together with a backend database.
 
 I began this project with the `create-react-app` boilerplate and eventually added other technologies such as `react-router-dom`. One of the main challenges I ran into was manipulating state with ternery operators, but thankfully I now feel comfortable with it. 
 
