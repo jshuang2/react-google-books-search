@@ -1,39 +1,36 @@
-## Project Name & Pitch
+## React Google Books Search
 
-#### Example:
+An application created using the MERN stack and allows users to search for books via the Google Books API. Search results are dynamically rendered in the UI and users have the option to save and/or delete books.
 
-TweetWorld 
+View the deployed application at: **https://search-google-books-api.herokuapp.com/**
 
-An application used to filter data form Twitter based on user preference, built with React, Redux, JavaScript, and CSS.
+## How it works
 
-## Project Status
-(only necessary if incomplete)
+1. Users are first directed to the `Home` page where they can search for any book. Book information is retrived via the publicly available Google Books API.
 
-#### Example:
+2. Upon searching for a book, users will see a list of relevant results. They can click `save` to save the book to the `Saved` page. In the back end, the book is saved to the Mongo database.
 
-This project is currently in development. Users can filter tweets by username and keyword and see visual data representation. Functionality to sort by additional parameters is in progress.
+3. Users can save as many books as they want. If they then go to the `Saved` page, they'll not only see books that have been saved by them, but also previous visitor's saved books (it's basically a shared space of saved books).
 
-## Project Screen Shot(s)
+4. In either the `Home` or `Saved` pages, a user can click on the `View Book` button. This will redirect them to the Google Books store page where they can either purchase or read a preview of the book.
 
-#### Example:   
+5. If a user wants to remove a saved book from the list, they may click the `Delete` button to remove the book from the page. In the back end, this deletes the document from the Mongo database.
 
-[ PRETEND SCREEN SHOT IS HERE ]
+#### Search for, save, and delete books:   
 
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
+![Google Books Search](https://user-images.githubusercontent.com/52802240/77485425-55f33b00-6dea-11ea-986c-17e9e4572261.gif)
+
+---
 
 ## Installation and Setup Instructions
 
 #### Example:  
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+If you'd like to view the app locally, you may clone down this repository. You will need `node`, `npm`, and `MongoDB` installed globally on your machine.  
 
 Installation:
 
 `npm install`  
-
-To Run Test Suite:  
-
-`npm test`  
 
 To Start Server:
 
@@ -41,23 +38,19 @@ To Start Server:
 
 To Visit App:
 
-`localhost:3000/ideas`  
+`localhost:3000`  
+
+---
 
 ## Reflection
 
-  - What was the context for this project? (ie: was this a side project? was this for Turing? was this for an experiment?)
-  - What did you set out to build?
-  - Why was this project challenging and therefore a really good learning experience?
-  - What were some unexpected obstacles?
-  - What tools did you use to implement this project?
-      - This might seem obvious because you are IN this codebase, but to all other humans now is the time to talk about why you chose webpack instead of create react app, or D3, or vanilla JS instead of a framework etc. Brag about your choices and justify them here.  
+This was a week long project I built during my final month of the University of Washington's coding bootcamp. This project is a culmination of much of what was taught in the program. Project goals included creating a functional React app and tying that together with a backend database.
 
-#### Example:  
+I began this project with the `create-react-app` boilerplate and eventually added other technologies such as `react-router-dom`. One of the main challenges I ran into was manipulating state with ternery operators, but thankfully I now feel comfortable with it. 
 
-This was a 3 week long project built during my third module at Turing School of Software and Design. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.  
+At the end of the day, the technologies implemented in this project are React, React-Router, Express, MongoDB, Mongoose, JSX, and CSS, and Node. Creating this app proved to be a great challenge for me. I'm proud of what it is at its current state. 
 
-Originally I wanted to build an application that allowed users to pull data from the Twitter API based on what they were interested in, such as 'most tagged users'. I started this process by using the `create-react-app` boilerplate, then adding `react-router-4.0` and `redux`.  
+In the future, I plan on adding authentication so that users can only view and delete books that they've saved as opposed to everyone's. This will add a privacy aspect that some users might prefer.
 
-One of the main challenges I ran into was Authentication. This lead me to spend a few days on a research spike into OAuth, Auth0, and two-factor authentication using Firebase or other third parties. Due to project time constraints, I had to table authentication and focus more on data visualization from parts of the API that weren't restricted to authenticated users.
 
-At the end of the day, the technologies implemented in this project are React, React-Router 4.0, Redux, LoDash, D3, and a significant amount of VanillaJS, JSX, and CSS. I chose to use the `create-react-app` boilerplate to minimize initial setup and invest more time in diving into weird technological rabbit holes. In the next iteration I plan on handrolling a `webpack.config.js` file to more fully understand the build process.
+View the deployed application at: **https://search-google-books-api.herokuapp.com/**
