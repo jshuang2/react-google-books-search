@@ -24,7 +24,6 @@ View the deployed application at: <b><a href="https://search-google-books-api.he
 
 ## Installation and Setup Instructions
 
-#### Example:  
 
 If you'd like to view the app locally, you may clone down this repository. You will need `node`, `npm`, and `MongoDB` installed globally on your machine.  
 
