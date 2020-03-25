@@ -4,6 +4,14 @@ An application created using the MERN stack and allows users to search for books
 
 View the deployed application at: <b><a href="https://search-google-books-api.herokuapp.com/" target="_blank">https://search-google-books-api.herokuapp.com/</a></b>
 
+### Technologies Used
+ - React JS
+ - MongoDB
+ - Mongoose
+ - Express JS
+ - Node
+ - Axios
+
 ## How it works
 
 1. Users are first directed to the `Home` page where they can search for any book. Book information is retrived via the publicly available Google Books API.
