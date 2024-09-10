@@ -37,7 +37,7 @@ If you'd like to view the app locally, you may clone down this repository. You w
 
 Installation:
 
-`npm install`  
+`npm install`
 
 To Start Server:
 
