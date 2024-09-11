@@ -2,7 +2,7 @@
 
 An application created using the MERN stack and allows users to search for books via the Google Books API. Search results are dynamically rendered in the UI and users have the option to save and/or delete books.
 
-View the deployed application at: <b><a href="https://search-google-books-api.herokuapp.com/" target="_blank">https://search-google-books-api.herokuapp.com/</a></b>
+View the deployed application at: <b><a href="https://search-google-books-api.herokuapp.com/" target="_blank">https://react-google-books-search-v2-03760ff5e8a4.herokuapp.com/</a></b>
 
 ### Technologies Used
  - React JS
@@ -60,4 +60,4 @@ At the end of the day, the technologies implemented in this project are React, R
 In the future, I plan on adding authentication so that users can only view and delete books that they've saved as opposed to everyone's. This will add a privacy aspect that some users might prefer.
 
 
-View the deployed application at: <b><a href="https://search-google-books-api.herokuapp.com/" target="_blank">https://search-google-books-api.herokuapp.com/</a></b>
+View the deployed application at: <b><a href="https://search-google-books-api.herokuapp.com/" target="_blank">https://react-google-books-search-v2-03760ff5e8a4.herokuapp.com/</a></b>
